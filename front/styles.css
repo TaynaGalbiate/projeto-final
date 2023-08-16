@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto+Condensed&family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(234, 175, 116);
+}
+
+main,header{
+    background-color:rgb(234, 175, 116);
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.div_user img{
+    width: 20px;
+    height: 20px;
+
+   }
+
+header h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30pt;
+    /* font-weight: lighter; */
+    padding: 20px;
+}
+
+.div_user{
+    display: flex;
+    box-shadow: 0px 0px 20px silver;
+    margin: 5px auto 30px auto;
+    width: 90%;
+    background-color: rgb(243, 139, 54);
+    border-radius: 10px;
+    padding: 25px;
+    transition: ease 0.5s;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#divShadow{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 1080;
+    opacity: 1;
+    transition: ease 0.5s;
+}
+
+#divShadow div{
+    background-color: #f2f2f2;
+    width: 50%;
+    padding: 50px;
+    margin: 7% auto 10% auto;
+    border-radius: 20px;  
+}
+
+#fechar{
+    position: absolute;
+    right: 27.5%;
+    /* background-color: #333; */
+    color: #f2f2f2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 12%;
+    /* border: 1px solid white; */
+    font-size: 45px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: lighter;
+    transition: ease 1s;
+}
+
+#fechar:hover{
+    transform: rotate(360deg);
+}
+
+input{
+    display: block;
+    margin-bottom: 10px;
+    border: 0;
+    outline: 0;
+}
+
+input[type=text],input[type=email],input[type=password]{
+    border-bottom: 1px solid silver;
+    background-color: ghostwhite;
+    width: 96%;
+    padding: 15px;
+    font-size: 12pt;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    border-radius: 50px;
+}
+
+
+input[type=file]{
+    padding: 10px;
+    font-weight: lighter;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 10pt;
+}
+
+input[type=submit]{
+    font-family: 'Outfit', sans-serif;
+    margin: 0.1px auto 0.1px auto;
+    text-align: center;
+    cursor: pointer;
+    transition: ease 0.5s;
+    width: 95%;
+    height: 60px;
+    background-color: none;
+    margin-bottom: 1px;
+}
+
+input[type=submit]:hover{
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    width: 95%;
+    height: 60px;
+}
