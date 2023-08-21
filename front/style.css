@@ -3,29 +3,30 @@ body {
     background-color: rgb(234, 175, 116);
    }
    
+ 
    .box {
     color: white;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 70%;
+    left: 50%; 
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 40px;
     width: 50%;
     margin: 20px;
    }
-   
+    
    fieldset {
-    border: 3px solid rgb(255, 149, 0);
+    border: 6px solid rgb(255, 149, 0);
    }
    
    legend {
-    border: 1px solid rgb(255, 149, 0);
-    padding: 10px;
+    border: 4px solid rgb(255, 149, 0);
+    padding: 40px;
     text-align: center;
     background-color: rgb(255, 149, 0);
-    border-radius: 10px;
+    border-radius: 80px;
    }
    
    .inputBox {
@@ -54,28 +55,28 @@ body {
    .inputUser:focus~.labelInput,
    .inputUser:valid~.labelInput {
     top: -60%;
-    font-size: 12px;
+    font-size: 20px;
     color: rgb(255, 149, 0);
    }
    
    #admissao {
     border: none;
-    padding: 8px;
-    border-radius: 10px;
+    padding: 16px;
+    border-radius: 20px;
     outline: none;
     font-size: 15px;
    }
    
    #nascimento {
     border: none;
-    padding: 8px;
-    border-radius: 10px;
+    padding: 16px;
+    border-radius: 20px;
     outline: none;
     font-size: 15px;
    }
    
    #obs {
-    font-size: 16px;
+    font-size: 32px;
    }
    
    #submit {
@@ -92,3 +93,59 @@ body {
    #submit:hover {
     background-image: repeating-linear-gradient(rgb(234, 175, 116), rgb(255, 149, 0));
    }
+ 
+   
+/* definir a media query junto com as dimensões */
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    body {
+      height: 300px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  
+    form {
+      padding: 50px 10px 50px 5px;
+      height: 100vh;
+      width: 200px;
+      margin-left: -200px;
+      transition: ease 0.5s;
+      background-color: rgba(0, 0, 0, 1);
+      z-index: 10000;
+      position: fixed;
+      top: 0px;
+    }
+    .inputBox {
+      display: block;
+      text-align: left;
+    }
+    header nav ul li img {
+      display: none;
+    }
+    header nav ul li {
+      margin-bottom: 10px;
+    }
+    .onsubmit {
+      display: block;
+      color: #fff;
+      padding: 10px;
+      font-size: 30pt;
+      font-weight: bold;
+    }
+    .slogan {
+      margin-top: 0px;
+      font-size: 17pt;
+      position: absolute;
+      top: 100px;
+      text-shadow: 1px 1px 2px #000;
+    }
+    .em-linha {
+      flex-direction: column;
+    }
+    .div-home img {
+      width: 100%;
+    }
+  
+    .checkout {
+      position: fixed !important;
+    }
+  }

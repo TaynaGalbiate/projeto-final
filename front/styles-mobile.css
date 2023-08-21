@@ -1,0 +1,8 @@
+/* definir a media query junto com as dimensões */
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    
+    .body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(234, 175, 116);
+       }
+    }

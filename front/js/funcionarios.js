@@ -5,6 +5,8 @@ const btn = document.getElementById("btnFuncionarios");
 
     // CARREGAR DADOS DOS FUNCIONÁRIOS
 
+  
+
 
 function carregarDados(){
 
@@ -20,18 +22,26 @@ function carregarDados(){
             divUser.setAttribute("class","div_user");
             divUser.innerHTML = `<img src="../img/user.png">
             <h2>Nome: ${item.nome}</h2>
+            <h2>Email: ${item.email}</h2>
             <h3>Função: ${item.funcao}</h3>
             <h3>Status: ${item.status}</h3>
+            <h3>Endereco: ${item.endereco}</h3>
+            <h3>Telefone: ${item.telefone}</h3>
 
             <a href="#" onclick="editar('${item.idusuarios}','${item.nome}','${item.funcao}','${item.endereco}','${item.telefone}','${item.email}','${item.status}')">
                 <img src="../img/botao-editar.png">
             </a>
+
+            
+            
             `;
             estrutura.appendChild(divUser);
         })
     }).catch((error)=>console.log(`Erro ao executar a API -> ${error}`));
     };
 
+      //Atualizar o status do funcionário.
+    console.log(`Funcionário: ${employeenome}, Novo Status: ${newstatus}`);
 
 
     // ATUALIZAR DADOS DOS FUNCIONÁRIOS
@@ -51,6 +61,9 @@ function carregarDados(){
         const inputEmail = document.createElement("input");
         const inputStatus = document.createElement("input");
         const inputSub = document.createElement("input");
+        const inputClose = document.createElement("input");
+    
+        
     
     
         // Aplicando atributos para os elementos
@@ -109,7 +122,20 @@ function carregarDados(){
     
         inputSub.setAttribute("type","submit");
         inputSub.setAttribute("value","Atualizar");
-    
+
+
+        
+        inputClose.setAttribute("type","submit");
+        inputClose.setAttribute("value","Fechar");
+        
+        
+       
+        
+        inputClose.onclick = () => {
+            body.removeChild(divShadow);
+        }
+
+       
     
         inputSub.onclick = ()=>{
           //  if(inputConfirm.value != inputPass.value){
@@ -124,15 +150,19 @@ function carregarDados(){
                     body:JSON.stringify({
                         nome:inputNome.value,
                         email:inputEmail.value,
-                        funcao:inputFuncao.value
+                        funcao:inputFuncao.value,
+                        status:inputStatus.value,
+                        endereco:inputEndereco.value,
+                        telefone:inputTelefone.value
                         
                     }) 
                 }) 
                 return alert("Funcionou")
                 
         } 
+
         
-    
+      
 
         
 
@@ -148,4 +178,5 @@ function carregarDados(){
         divWhite.appendChild(form);
         divShadow.appendChild(divWhite);
         body.appendChild(divShadow);
+        form.appendChild(inputClose);
     }

@@ -34,12 +34,12 @@ header h1{
 .div_user{
     display: flex;
     box-shadow: 0px 0px 20px silver;
-    margin: 5px auto 30px auto;
-    width: 90%;
+    margin: 6px auto 32px auto;
+    width: 100%;
     background-color: rgb(243, 139, 54);
-    border-radius: 10px;
-    padding: 25px;
-    transition: ease 0.5s;
+    border-radius: 20px;
+    padding: 35px;
+    transition: ease 0.6s;
     justify-content: space-between;
     align-items: center;
 }
@@ -53,7 +53,7 @@ header h1{
     top: 0;
     z-index: 1080;
     opacity: 1;
-    transition: ease 0.5s;
+    transition: ease 0.4s;
 }
 
 #divShadow div{
@@ -95,7 +95,7 @@ input{
 input[type=text],input[type=email],input[type=password]{
     border-bottom: 1px solid silver;
     background-color: ghostwhite;
-    width: 96%;
+    width: 100%;
     padding: 15px;
     font-size: 12pt;
     font-family: 'Poppins', sans-serif;
@@ -129,4 +129,15 @@ input[type=submit]:hover{
     border-radius: 50px;
     width: 95%;
     height: 60px;
+}
+
+h3 {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 18px;
+   }
+h2{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 18px;
 }
