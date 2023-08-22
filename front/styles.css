@@ -6,8 +6,17 @@
     box-sizing: border-box;
 }
 
+
 body{
     background-color:rgb(234, 175, 116);
+
+}
+.link{
+    top: -85px;
+    margin: 15px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 80px !important;
+    position: absolute;
 }
 
 main,header{
@@ -34,11 +43,13 @@ header h1{
 .div_user{
     display: flex;
     box-shadow: 0px 0px 20px silver;
-    margin: 6px auto 32px auto;
-    width: 100%;
+    margin: 10px auto 10px auto;
+    width: 115%;
     background-color: rgb(243, 139, 54);
     border-radius: 20px;
+    margin-left: -70px;
     padding: 35px;
+   
     transition: ease 0s;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +57,7 @@ header h1{
 
 #divShadow{
     background-color: rgba(0,0,0,0.7);
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -59,7 +70,7 @@ header h1{
 #divShadow div{
     background-color: #f2f2f2;
     width: 50%;
-    padding: 50px;
+    padding: 10px;
     margin: 7% auto 10% auto;
     border-radius: 20px;  
 }
@@ -141,3 +152,4 @@ h2{
     margin-right: 25px;
     font-size: 18px;
 }
+

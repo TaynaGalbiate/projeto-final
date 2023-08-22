@@ -23,9 +23,9 @@ function carregarDados(){
             divUser.innerHTML = `<img src="../img/user.png">
             <h2>Nome: ${item.nome}</h2>
             <h2>Email: ${item.email}</h2>
-            <h3>Função: ${item.funcao}</h3>
+            <h3>Cargo: ${item.funcao}</h3>
             <h3>Status: ${item.status}</h3>
-            <h3>Endereco: ${item.endereco}</h3>
+            <h3>Endereço: ${item.endereco}</h3>
             <h3>Telefone: ${item.telefone}</h3>
 
             <a href="#" onclick="editar('${item.idusuarios}','${item.nome}','${item.funcao}','${item.endereco}','${item.telefone}','${item.email}','${item.status}')">
@@ -40,8 +40,6 @@ function carregarDados(){
     }).catch((error)=>console.log(`Erro ao executar a API -> ${error}`));
     };
 
-      //Atualizar o status do funcionário.
-    console.log(`Funcionário: ${employeenome}, Novo Status: ${newstatus}`);
 
 
     // ATUALIZAR DADOS DOS FUNCIONÁRIOS
@@ -85,12 +83,6 @@ function carregarDados(){
         inputNome.setAttribute("type","text");
         inputNome.setAttribute("placeholder",`Usuário: ${nome}`);
     
-        // Aplicando atributos a pass e confirm
-       // inputPass.setAttribute("type","password");
-       // inputPass.setAttribute("placeholder","Senha");
-    
-       // inputConfirm.setAttribute("type","password");
-        //inputConfirm.setAttribute("placeholder","Confirme a senha");
 
 
         // Atributos para funcao
@@ -116,9 +108,6 @@ function carregarDados(){
     
 
     
-        // Atributos para file
-       // inputFile.setAttribute("type","file");
-       // inputFile.setAttribute("value",`${foto}`);
     
         inputSub.setAttribute("type","submit");
         inputSub.setAttribute("value","Atualizar");
@@ -138,9 +127,6 @@ function carregarDados(){
        
     
         inputSub.onclick = ()=>{
-          //  if(inputConfirm.value != inputPass.value){
-            //    return alert("Senha de confirmação diferente da senha digitada")
-          //  }
                 fetch(`http://127.0.0.1:30021/usuarios/update/${id}`,{
                     method:`PUT`,
                     headers:{

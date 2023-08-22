@@ -7,6 +7,7 @@
  <title>Cadastro - RH</title>
  <link rel="stylesheet" href="./style.css">
  <link rel="stylesheet" href="./styles-mobile.css">
+ 
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     
  <div class="box">
   <form onsubmit="return false">
-   <fieldset>
+   <fieldset >
     <legend><b>Cadastro de Funcionários</b></legend>
     <br>
     <div class="inputBox">
@@ -26,7 +27,7 @@
 
     <div class="inputBox">
      <input type="text" name="funcao" id="funcao" class="inputUser" required>
-     <label for="funcao" class="labelInput">Função</label>
+     <label for="funcao" class="labelInput">Cargo</label>
     </div>
     <br>
 
@@ -69,9 +70,9 @@
     <br>
 
 
-    <label name="obs" ><br>Observações<br> </label>
+    <label name="obs" ><br>Observações (salários e comissões)<br> </label>
     <textarea id="obs"></textarea>
-    <br><br>
+
 
     <label name="status" ><br>Funcionário:
         <input type="radio" id="status" name="status" value="ativo" checked> Ativo
@@ -80,12 +81,12 @@
 <br><br>
 
     <input type="submit" name="submit" id="submit">
-
    </fieldset>
-  </form>
+  </form>   
+</div>
 
- </div>
 <script src="./js/formulario.js"></script>
-</body>
 
+
+</body>
 </html>
