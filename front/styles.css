@@ -8,7 +8,7 @@
 
 
 body{
-    background-color:rgb(234, 175, 116);
+    background-color:#87d7ff;
 
 }
 .link{
@@ -20,7 +20,7 @@ body{
 }
 
 main,header{
-    background-color:rgb(234, 175, 116);
+    background-color:#87d7ff;
     width: 70%;
     margin: 0 auto;
     padding: 10px;
@@ -45,7 +45,7 @@ header h1{
     box-shadow: 0px 0px 20px silver;
     margin: 10px auto 10px auto;
     width: 115%;
-    background-color: rgb(243, 139, 54);
+    background-color: #199ee0;
     border-radius: 20px;
     margin-left: -70px;
     padding: 35px;

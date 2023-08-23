@@ -1,0 +1,118 @@
+@import url(./responsive-background.css);
+@import url(./responsive-elements.css);
+
+/* Reset CSS */
+* {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font-family: Arial, Helvetica, sans-serif;
+ /* font-family:  Arial, Helvetica, sans-serif; */
+ font-weight: 300;
+ vertical-align: baseline;
+ text-decoration: none;
+ /*Tira o sublinhado*/
+
+ list-style: none;
+ /*Tira as bolinhas que ficam de frente com o nome*/
+}
+
+body {
+ background-image: url(../img/bolha-background.png);
+ background-repeat: no-repeat;
+ /* background-position: left center; */
+}
+
+.container {
+ width: 1024px;
+ margin: 30px auto;
+ /*Centraliza a tela*/
+
+ display: flex;
+ flex-direction: column;
+}
+
+.row {
+ display: flex;
+ flex-direction: row;
+}
+
+.logoprincipal {
+ width: 130px;
+ filter: invert(20%);
+}
+
+
+footer ul li {
+ margin: 0 40px 20px 20px;
+}
+
+footer ul li a img {
+ width: 40px;
+ filter: invert(20%);
+
+
+}
+
+header section {
+
+ justify-content: space-between;
+ /* Dividi os elementos com espaços iguais até o final da coluna*/
+
+ align-items: center;
+ /*Alinha os itens*/
+}
+
+header nav ul {
+ display: flex !important;
+ /* flex-direction: row !important; */
+ align-items: center !important;
+}
+
+header nav ul li a {
+ margin: 0 15px;
+ color: #39c;
+
+}
+
+.sobre-web-design {
+ justify-content: space-between;
+ align-items: center;
+}
+
+.sobre-web-design article {
+ width: 250px;
+}
+
+.sobre-web-design article h1 {
+ font-size: 70px;
+ line-height: 90%;
+ font-weight: 400;
+ color: #333366;
+}
+
+.sobre-web-design article h2,
+.sobre-web-design article p {
+ color: #3399cc;
+}
+
+.sobre-web-design article h2 {
+ font-size: 30px;
+ text-transform: uppercase;
+ /*Tudo maiúsculo*/
+
+ letter-spacing: 2px;
+ /*Espaçamento entre letras*/
+
+ line-height: 200%;
+ /*Espaçamento entre as linhas*/
+}
+
+.sobre-web-design article p {
+ margin: 10px 0 40px;
+}
+
+.sobre-web-design figcaption img {
+ width: 700px;
+}
