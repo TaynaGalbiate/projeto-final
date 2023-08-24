@@ -1,10 +1,10 @@
 @media screen and (min-width:0px) and (max-width: 876px) {
 
     .box{
-        top: 56%;
-        left: 45%;
-        width: 93%;
-        margin-bottom: 800px;
+        top: 40%;
+        left: 50%;
+        width: 70%;
+        margin-top: 100px
     };
     .inputBox {
         position: relative;
